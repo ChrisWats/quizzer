@@ -3,20 +3,47 @@
 .awesome-box {
   background-color: black;
   width: 100%;
-  margin-top: 0;
+  margin: 0;
   padding: 10px;  
 }
 
-.icon {
+.navbar-brand {
   max-width: 100px;
   height: 75px;
   border-radius: 50%;
 }
 
-.headline {
-  color: #2265A0;
+.hero {
+  background: image_url('Studying_on_Cerro_Chena.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 475px;
+  margin: 0;
 }
 
-.ask {
+.riddle {
+  padding: 10px;
+}
+
+.navbar {
+  background: image_url('dark-grey-terrazzo.png');
+}
+
+.feature-box {
+  width: 25%;
+  height: 450px;
+  padding: 5px;
   margin: 20px;
+  background: #5D5D5D;
+  color: black;
+}
+
+.surround {
+  background: image_url('oriental.png');
+}
+
+h3 {
+  margin: 0;
 }

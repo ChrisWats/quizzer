@@ -12,11 +12,30 @@
   </head>
 
   <body>
-    <div class="awesome-box row">
-      <%= link_to image_tag('ChickenIcon.jpg', class: 'icon col-3 img-fluid'), root_path %>
-      <h1 class="col-10 headline">Welcome to Quizzer3000!</h1>
-    </div>
-    <br />
+
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <%= link_to image_tag('ChickenIcon.jpg', class: 'navbar-brand col-3 img-fluid'), "/" %>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+
+          <li class="nav-item">
+            <%= link_to "Add a Riddle", '#', class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Add a Joke", '#', class: "nav-link" %>
+          </li>
+
+          <li class="nav-item">
+            <%= link_to "Add a Nonsense-verse", '#', class: "nav-link" %>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
     <%= yield %>
   </body>
 </html>

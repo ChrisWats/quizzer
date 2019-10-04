@@ -10,6 +10,6 @@ class QuizzesController < ApplicationController
   private
 
   def quiz_params
-    params.require(:quiz).permit(:answer)
+    params.require(:quiz).permit(:riddle, :answer)
   end
 end
