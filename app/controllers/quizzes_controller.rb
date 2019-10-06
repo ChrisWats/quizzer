@@ -13,7 +13,7 @@ class QuizzesController < ApplicationController
   def create
     @quiz = Quiz.create(quiz_params)
     if @quiz.valid?
-      flash[:notice] = 'Thank you for contributing the riddle with the answer: ' + @quiz.answer.last
+      flash[:notice] = 'Thank you for contributing the riddle with the answer: ' + @quiz.answer
     else
       flash[:error] = '<strong>Could not save</strong> data was not valid.'
     end
