@@ -20,35 +20,19 @@
         </button>
         <h4 class="modal-title" id="myModalLabel">Add a Riddle</h4>
       </div>
+      
       <%= simple_form_for @quiz do |f| %>
-      <div class="modal-body">
+        <div class="modal-body">
         
-  <%= f.input :riddle %>
-  <%= f.input :answer %>
-  <br />
-  
-  
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <%= f.submit 'Submit', class: 'btn btn-primary' %>
-      </div>
+          <%= f.input :riddle %>
+          <%= f.input :answer %>
+          <br />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <%= f.submit 'Submit', class: 'btn btn-primary' %>
+        </div>
       <% end %>
     </div>
   </div>
 </div>
-
-<br />
-<div class="container">
-  <% if flash[:error].present? %>
-    <div class="col-10 offset-1 alert alert-danger">
-      <%= flash[:error].html_safe %>
-    </div>
-  <% end %>
-  <% if flash[:notice].present? %>
-    <div class="col-10 offset-1 alert alert-success">
-      <%= flash[:notice].html_safe %>
-    </div>
-  <% end %>
-</div>
-
