@@ -1,10 +1,12 @@
 @import "bootstrap";
 
 .awesome-box {
-  background-color: black;
-  width: 100%;
-  margin: 0;
+  background-color: #F1ECD8;
   padding: 10px;  
+}
+
+.awesome-box h2, .awesome-box h1 {
+  margin: 10px;
 }
 
 .navbar-brand {
@@ -32,7 +34,7 @@
 }
 
 .feature-box {
-  width: 25%;
+  width: auto;
   height: 450px;
   padding: 5px;
   margin: 20px;
@@ -46,4 +48,38 @@
 
 h3 {
   margin: 0;
+}
+
+.spoken {
+  
+}
+
+#answer {
+  display: none;
+  color: #fff;
+}
+
+.speech-bubble {
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: .4em;
+}
+
+.speech-bubble:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 85%;
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-top-color: rgba(0, 0, 0, 0.5);
+  border-bottom: 0;
+  border-right: 0;
+  margin-left: -25px;
+  margin-bottom: -50px;
+}
+
+.clear {
+  clear: both;
 }

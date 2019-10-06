@@ -19,3 +19,10 @@
 //= require tether
 //= require bootstrap-sprockets
 //= require_tree .
+function Appear() {
+  var x = document.getElementById("answer");
+  if (x.style.display === "block") {
+  x.style.display = "none";
+  } else { x.style.display = "block";
+  }
+}

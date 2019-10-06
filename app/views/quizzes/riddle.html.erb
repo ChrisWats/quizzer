@@ -1,0 +1,16 @@
+<div class="hero">
+  <div class="spoken col-10 offset-1">
+    <h2><%= @quiz.riddle %></h2>
+    <br />
+        <button onclick="Appear()">Answer</button>
+        <%= link_to "Another Riddle", riddle_path, class: 'btn btn-secondary float-right' %>
+        <br /><br />
+
+        <div id="answer" class="col-10 offset-1 text-center">
+          <div class="speech-bubble">
+          <br />
+          <h2><%= @quiz.answer %></h2>
+        </div>
+      </div>
+  </div>
+</div>
